@@ -1,16 +1,19 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public class MapGenerator : MonoBehaviour
+public class MapGeneration : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private IslandGenerator islandGenerator;
+    private IslandConnector islandConnector;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        islandGenerator = GetComponent<IslandGenerator>();
+        islandConnector = GetComponent<IslandConnector>();
+
+        List<List<GameObject>> islandRows = islandGenerator.GenerateMap();
+        GameObject bossIsland = islandGenerator.GetBossIsland();
+        GameObject ship = islandGenerator.GetShip();
+        islandConnector.ConnectIslands(islandRows, bossIsland, ship);
     }
 }

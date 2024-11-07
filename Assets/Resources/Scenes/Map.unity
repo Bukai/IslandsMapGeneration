@@ -225,7 +225,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -272,7 +272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &619394801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,6 +529,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1563880889}
+  - component: {fileID: 1563880892}
+  - component: {fileID: 1563880891}
+  - component: {fileID: 1563880890}
   m_Layer: 0
   m_Name: MapGeneration
   m_TagString: Untagged
@@ -551,6 +554,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1563880890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563880888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667486d52b7034ec8a4e1d2f312a6f1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineRendererPrefab: {fileID: 4149156129452684224, guid: 9b5c9414ab5d04369be044cd3dc4ccd2, type: 3}
+--- !u!114 &1563880891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563880888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08b7f8453b0241c586bd348748d1639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipPrefab: {fileID: 4141706931581122723, guid: 736d036a2fb6d4ac6a3cf884fbecd2ad, type: 3}
+  islandPrefab: {fileID: 3035111333395611677, guid: 8443fb728b5fa40ae8871d0238484142, type: 3}
+  bossIslandPrefab: {fileID: 7490553321293115588, guid: 32634cab4f48544b9b8da7d31766fdc8, type: 3}
+  horizontalSpacing: 7
+  verticalSpacing: 4
+  positionVariance: 1
+  minDistance: 2.5
+--- !u!114 &1563880892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563880888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee246f11db414be5bf6fad847a8d9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
