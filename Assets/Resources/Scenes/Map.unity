@@ -2581,8 +2581,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IslandUIManager, Assembly-CSharp
+      - m_Target: {fileID: 1584963954}
+        m_TargetAssemblyTypeName: BossIslandUIManager, Assembly-CSharp
         m_MethodName: HideUI
         m_Mode: 1
         m_Arguments:
