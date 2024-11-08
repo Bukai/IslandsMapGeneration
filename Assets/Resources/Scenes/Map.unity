@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 1563880892}
   - component: {fileID: 1563880891}
   - component: {fileID: 1563880890}
+  - component: {fileID: 1563880893}
   m_Layer: 0
   m_Name: MapGeneration
   m_TagString: Untagged
@@ -598,6 +599,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee246f11db414be5bf6fad847a8d9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1563880893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563880888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa6b9d459a884e4a94d467db8c1d992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  islandSprites:
+  - {fileID: 21300000, guid: 382f5b36ad37148f78644b1dd6d9ae40, type: 3}
+  - {fileID: 21300000, guid: d3ed135e97e89418584a62a7c81af2e8, type: 3}
+  - {fileID: 21300000, guid: 4b82323a44c1d43258571cbf2b5e7dfc, type: 3}
+  - {fileID: 21300000, guid: 506eba6ee644c4c43a66e0cb3dd12b4c, type: 3}
+  - {fileID: 21300000, guid: 01512a1e925a04b52a907f59249d687f, type: 3}
+  - {fileID: 21300000, guid: 5650ef0aeac02499aa8f5de4e0fdc919, type: 3}
+  - {fileID: 21300000, guid: 9b8ceba3de9d8464e8ee3bb805249b6a, type: 3}
+  - {fileID: 21300000, guid: e322f355a7a414ec1a67ac5a7e369835, type: 3}
+  - {fileID: 21300000, guid: 1143f8b28781d4ddba5a38bff854daa0, type: 3}
+  - {fileID: 21300000, guid: c5f1228ae4ab440c7acb41e689deca6f, type: 3}
+  rewardIcons:
+  - {fileID: 21300000, guid: 1d55f738fc43c4ec98bcd42276f63a93, type: 3}
+  - {fileID: 21300000, guid: 3e95d3b07acce4e7da6960672d533532, type: 3}
+  - {fileID: 21300000, guid: 70ac92d056b6041ee993cf38d97fc894, type: 3}
+  - {fileID: 21300000, guid: f5e7d8a64493d46c184ec33aeb887eb4, type: 3}
+  - {fileID: 21300000, guid: b77f6ae5eb2c04c0099f092809ac7e75, type: 3}
+  - {fileID: 21300000, guid: abef5b64b2c2f4d2aa8d9f02f486dded, type: 3}
+  - {fileID: 21300000, guid: a3e31102341be41d29ad986a2f9bae20, type: 3}
+  bossIslandSprite: {fileID: 21300000, guid: 69576eb6dfe7047e3be5b4cd4f50f7f8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

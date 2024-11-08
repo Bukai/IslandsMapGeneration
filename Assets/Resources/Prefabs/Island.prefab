@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3595691601825044075}
   - component: {fileID: 6191760486615572947}
+  - component: {fileID: 6395594205977980062}
   m_Layer: 0
   m_Name: Island
   m_TagString: Untagged
@@ -87,3 +88,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6395594205977980062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3035111333395611677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f43a363e6b04b49a1ff2539e6e103f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  islandSprites: []
+  rewardIcons: []
+  difficultyLevels:
+  - Easy
+  - Medium
+  - Hard
+  islandInfo:
+    islandName: 
+    islandSprite: {fileID: 0}
+    rewards: []
+    difficultyText: 
