@@ -21,7 +21,6 @@ public class Island : MonoBehaviour
 {
     private IslandInfo islandInfo = new IslandInfo();
     private SpriteRenderer spriteRenderer;
-    private string[] difficultyLevels = { "Easy", "Medium", "Hard" };
 
     private void Awake()
     {
@@ -29,6 +28,16 @@ public class Island : MonoBehaviour
     }
 
     private void Start()
+    {
+        GenerateRandomIslandData();
+    }
+
+    private void OnMouseDown()
+    {
+        IslandUIManager.Instance.ShowIslandInfo(islandInfo);
+    }
+
+    private void GenerateRandomIslandData()
     {
         AssignRandomSprite();
         AssignRandomName();
@@ -59,19 +68,20 @@ public class Island : MonoBehaviour
 
     private void AssignRandomDifficulty()
     {
+        string[] difficultyLevels = { "Easy", "Medium"};
         islandInfo.difficultyText = difficultyLevels[Random.Range(0, difficultyLevels.Length)];
     }
 
     private void GenerateRandomRewards()
     {
         var icons = AssetManager.Instance.rewardIcons;
-        int rewardCount = Random.Range(2, 5);
+        int rewardCount = 2;
         for (int i = 0; i < rewardCount; i++)
         {
             Reward reward = new Reward
             {
                 icon = icons[Random.Range(0, icons.Count)],
-                quantity = Random.Range(1, 16)
+                quantity = Random.Range(1, 9)
             };
             islandInfo.rewards.Add(reward);
         }

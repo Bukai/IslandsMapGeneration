@@ -11,7 +11,7 @@ public class BossReward
 [System.Serializable]
 public class BossIslandInfo
 {
-    public string islandName = "Doomspire Citadel";
+    public string islandName = "Doom Citadel";
     public Sprite islandSprite;
     public List<BossReward> rewards = new List<BossReward>();
     public string difficultyText = "Hard";
@@ -33,6 +33,11 @@ public class BossIsland : MonoBehaviour
         GenerateBossRewards();
     }
 
+    private void OnMouseDown()
+    {
+        BossIslandUIManager.Instance.ShowBossInfo(bossIslandInfo);
+    }
+
     private void AssignBossSprite()
     {
         bossIslandInfo.islandSprite = AssetManager.Instance.bossIslandSprite;
@@ -42,7 +47,9 @@ public class BossIsland : MonoBehaviour
     private void GenerateBossRewards()
     {
         var icons = AssetManager.Instance.rewardIcons;
-        for (int i = 0; i < 5; i++)
+        int rewardCount = 3;
+
+        for (int i = 0; i < rewardCount; i++)
         {
             BossReward reward = new BossReward
             {
